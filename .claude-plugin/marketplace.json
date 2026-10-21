@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "desktop-keepalive",
+  "owner": { "name": "yehuda-avrashi" },
+  "metadata": { "description": "Keep Claude Desktop and its sessions alive on Windows." },
+  "plugins": [
+    {
+      "name": "desktop-keepalive",
+      "source": "./",
+      "description": "Relaunches Claude Desktop when it closes and wakes your recent sessions so they reconnect to the phone, without model tokens."
+    }
+  ]
+}

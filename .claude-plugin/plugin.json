@@ -1,0 +1,38 @@
+{
+  "name": "desktop-keepalive",
+  "version": "1.0.0",
+  "author": { "name": "yehuda-avrashi" },
+  "description": "Keeps Claude Desktop alive on Windows and your sessions reachable from the phone: relaunches the app after a crash, quit, update or Windows restart, and wakes your recent sessions so they reconnect to Remote Control - without spending model tokens.",
+  "userConfig": {
+    "wakeCount": {
+      "type": "number",
+      "title": "Sessions to wake",
+      "description": "How many of your most recent sessions to wake after Claude restarts.",
+      "default": 3
+    },
+    "alwaysWakeSessionIds": {
+      "type": "string",
+      "title": "Always wake these sessions",
+      "description": "Comma-separated session ids (local_...) to wake after every restart even when they are not among the most recent ones. Leave empty for none.",
+      "default": ""
+    },
+    "wakeMessage": {
+      "type": "string",
+      "title": "Wake-up message",
+      "description": "The message sent to each woken session.",
+      "default": "הודעה אוטומטית: קלוד הופעל מחדש, ונשלחה אליך הודעה כדי להעיר אותך מחדש ולחבר אותך שוב לנייד. אל תבצע שום פעולה ואל תקרא לשום כלי. ענה בשתי מילים בלבד: \"התעוררתי מחדש\""
+    },
+    "taskId": {
+      "type": "string",
+      "title": "Wake task id",
+      "description": "The id of the scheduled task that carries the [[desktop-keepalive]] marker. Its finished runs are archived so the session list stays clean.",
+      "default": "wake-sessions-after-restart"
+    },
+    "archiveOldRuns": {
+      "type": "boolean",
+      "title": "Archive finished task runs",
+      "description": "Archive (never delete) earlier finished runs of the wake task.",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+*.log
+*.log.old
+*.bak*
+.claude-plugin/types/
+node_modules/
