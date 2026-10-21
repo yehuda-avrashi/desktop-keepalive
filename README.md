@@ -37,9 +37,7 @@
    ```
    claude plugin marketplace add yehuda-avrashi/desktop-keepalive
    claude plugin install desktop-keepalive@desktop-keepalive --scope user
-   ```
-   הריפו פרטי, ולכן במחשב צריך גישה לגיטהאב (Git Credential Manager או `gh auth login`).
-2. לפתוח סשן חדש ולכתוב: "תתקין את keepalive". הסקיל `keepalive-setup` יעשה את השאר:
+   ```2. לפתוח סשן חדש ולכתוב: "תתקין את keepalive". הסקיל `keepalive-setup` יעשה את השאר:
    - יתקין את השומר.
    - ייצור את משימת ההשכמה.
    - יגדיר את האפליקציה.
